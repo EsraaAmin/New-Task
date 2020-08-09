@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Ipharama</title>
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <!-- build:css styles/vendor.css -->
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+        integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+    <!-- endbuild -->
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+    <!-- build:js scripts/modernizr.js -->
+    <script src="scripts/modernizr.js"></script>
+    <!-- endbuild -->
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="header">
+            <a href="/"> <span class="text-muted"><span class="firstLetter"><span><i class="fas fa-info"></i></span></span><span
+                        class="logo">Pharama</span></span>
+            </a>
+
+            <ul class="nav nav-pills float-right">
+                <span><i class="fas fa fa-search mr-3"></i></span>
+                <span><i class="fas fa fa-shopping-cart mr-3"></i></span>
+                <span><i class="fas fa fa-bell mr-3"></i></span>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="./images/user.png" alt="">
+                        Mostafa Mahmoud
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </div>
+                <button class="btn btn-link bd-search-docs-toggle p-0 ml-3" type="button" data-toggle="collapse"
+                    data-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false"
+                    aria-label="Toggle docs navigation"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"
+                        width="30" height="30" focusable="false">
+                        <title>Menu</title>
+                        <path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10"
+                            d="M4 7h22M4 15h22M4 23h22"></path>
+                    </svg>
+                </button>
+
+            </ul>
+        </div>
+
+        <div class="row tabsContainer">
+
+            <div class="searchCard d-flex align-items-center justify-content-center col-12 p-4">
+
+                <div class="row w-100">
+                    <div class="title col-12 mb-4"><i class="fas fa-store mr-2"></i>iPharma Shop</div>
+                    <span class="text-right closeIcon"><i class="fas fa fa-times"></i></span>
+
+
+                    <div class="col-12">
+                        <div class="form-group pull-right searchbox">
+                            <p class="mb-2">What are you Searching for?</p>
+                            <input type="text" class="search form-control" placeholder="Search by name or code">
+                            <span role="button " class="filterBtn"><i class="fal fa fa-filter text-white "></i></span>
+                        </div>
+                    </div>
+
+                    <div class="col-12 text-center mt-5 pb-5">
+                        <img src="./images/noresult.JPG" alt="">
+                        <p class="noResult">No search result found</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,152 @@
+
+@import 'variables';
+.main {
+
+  .card-container {
+      border: none;
+     
+      .card-title,.product-price {
+          font-size: 1.5rem;
+          color: $darkText;
+      }
+
+      .card-sub-title {
+        font-size: 1.2rem;
+        color: $darkText; 
+      }
+
+      .card-text {
+        color: $subText;
+
+      }
+      .statusColor {
+        color: $statusColor;
+      }
+
+      .price {
+          color: $primaryColor;
+      }
+
+      .btn {
+          text-transform: capitalize;
+      }
+
+      .form-control {
+        box-shadow: none !important;
+          &:focus {
+              outline: none !important;
+              box-shadow: none !important;
+          }
+      }
+
+    .img-caption {
+        position: absolute;
+        top: 22%;
+        right: 0;
+
+        @media(max-width: 500px){
+            top: 15%;
+        }
+
+        h2 {
+            font-size: 25px;
+            @media(max-width: 500px){
+                font-size: 16px;
+            }
+        }
+
+        p {
+            @media(max-width: 500px){
+                font-size: 13px;
+            } 
+        }
+
+        .btn-round {
+            width: 120px;
+            border-radius: 20px;
+        }
+
+    
+    }
+
+    .carousel-indicators {
+        left: unset !important;
+        position: absolute;
+        right:0 ;
+        bottom: -34px;
+        z-index: 15;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: center;
+        justify-content: center;
+         padding-left: unset !important; 
+        margin-right: 4%;
+        margin-left: 4%;
+        list-style: none;
+
+        @media(max-width:991px){
+            bottom: 0;
+        }
+
+        li {
+            background-color: $darkText !important;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+        }
+    }
+  }
+
+  .wide-card {
+    height: 320px;
+
+    @media(max-width: 991px){
+        overflow: scroll;
+        height: auto;
+    }
+  }
+
+  .short-card {
+      height: 148px;
+  }
+
+  .statusLable {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: .5rem auto;
+  }
+
+  .latestLable {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin: .5rem auto; 
+  }
+
+  .subLable {
+      font-size: 13px;
+  }
+
+  .label-text {
+      color : $subText;
+  }
+
+  .new-product {
+     background: $newProduct;
+  }
+
+  .new-user {
+    background: $newUser;
+}
+
+.text-weight {
+    font-weight: 500;
+}
+
+.mb-sm {
+    @media(max-width: 991px){
+        margin-bottom: 1rem;
+    } 
+}
+}
